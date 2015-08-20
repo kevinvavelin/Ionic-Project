@@ -22,6 +22,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   });
 })
 
+// Config use Angular routing and angular-ui-router in order to provide different view on your app
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 

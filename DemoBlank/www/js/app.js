@@ -17,3 +17,25 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+
+
+.config(function($stateProvider, $urlRouterProvider) {
+    $stateProvider
+
+    .state("index", {
+      url: "",
+      templateUrl: "views/home.html"
+    })
+
+    .state("login", {
+      url:"/login",
+      templateUrl: "views/login.html"
+    })
+
+    .state("details", {
+      url:"/detail",
+      templateUrl: "views/details.html"
+    });
+
+    $urlRouterProvider.otherwise("");
+});
