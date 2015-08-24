@@ -16,11 +16,11 @@ angular.module('starter', ['ionic'])
       StatusBar.styleDefault();
     }
 
-    this.ionicLogo = "img/ionic.png";
-
   });
 })
-
+.controller("DemoController", function($scope) {
+  $scope.ionicLogo = "img/ionic.png";
+})
 
 .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
@@ -37,7 +37,8 @@ angular.module('starter', ['ionic'])
 
     .state("details", {
       url:"/detail",
-      templateUrl: "views/details.html"
+      templateUrl: "views/details.html",
+      controller: "DemoController"
     });
 
     $urlRouterProvider.otherwise("");
