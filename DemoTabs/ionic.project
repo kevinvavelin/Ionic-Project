@@ -1,6 +1,6 @@
 {
   "name": "DemoTabs",
-  "app_id": "",
+  "app_id": "cd3372fa",
   "gulpStartupTasks": [
     "sass",
     "watch"

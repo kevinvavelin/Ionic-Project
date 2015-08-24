@@ -1,6 +1,6 @@
 {
   "name": "DemoBlank",
-  "app_id": "",
+  "app_id": "646f7a7a",
   "gulpStartupTasks": [
     "sass",
     "watch"

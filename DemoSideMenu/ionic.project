@@ -1,6 +1,6 @@
 {
   "name": "DemoSideMenu",
-  "app_id": "",
+  "app_id": "e4a9c93e",
   "gulpStartupTasks": [
     "sass",
     "watch"
