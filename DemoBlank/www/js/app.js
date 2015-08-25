@@ -24,7 +24,6 @@ angular.module('starter', ['ionic'])
 
 .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
-
     .state("index", {
       url: "",
       templateUrl: "views/home.html"
@@ -42,4 +41,48 @@ angular.module('starter', ['ionic'])
     });
 
     $urlRouterProvider.otherwise("");
+})
+
+.provider("user", function() {
+    this.$get = function() {
+      var user = {
+        "firstName" : "John",
+        "lastName" : "Doe",
+        "mail" : "john@doe.com",
+        "login" : function() {
+
+        },
+        "logout" : function() {
+          
+        }
+      }
+      return user;
+    }
+})
+
+.factory("userFactory", function() {
+  var user = {
+    "firstName" : "John",
+    "lastName" : "Doe",
+    "mail" : "john@doe.com",
+    "login" : function() {
+
+    },
+    "logout" : function() {
+
+    }
+  }
+  return user;
+})
+
+.service("userService", function() {
+  this.firstName = "John";
+  this.lastName = "lastName";
+  this.mail = "john@doe.com";
+  this.login = function() {
+    // Login
+  }
+  this.logout = function() {
+    // Logout
+  }
 });
